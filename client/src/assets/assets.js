@@ -43,7 +43,6 @@ import profile_img2 from './profile_img2.png'
 import profile_img3 from './profile_img3.png'
 import lesson_icon from './lesson_icon.svg'
 
-
 export const assets = {
     logo,
     search_icon,
@@ -359,7 +358,7 @@ export const dummyCourses = [
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1ae",
-        "courseTitle": "Ollama Basics",
+        "courseTitle": "Ollama Basics explained",
         "courseDescription": "<h2>Ollama explained</h2><p>Ollama is critical in today's digital age. This course introduces the fundamentals of cybersecurity, including threat analysis, ethical hacking, and secure programming practices.</p><p>By the end of this course, you will understand how to identify vulnerabilities and implement security measures effectively.</p><ul><li>Understand security protocols</li><li>Learn about encryption techniques</li><li>Conduct basic penetration testing</li></ul>",
         "coursePrice": 69.99,
         "isPublished": true,
@@ -425,7 +424,7 @@ export const dummyCourses = [
     },
     {
         "_id": "605c72efb3f1c2b1f8e4e1a7",
-        "courseTitle": "JWT explained",
+        "courseTitle": "JWT explained in detail",
         "courseDescription": "<h2>Become a Backend Develope</h2><p>This comprehensive bootcamp covers everything you need to know to become a full-stack web developer. From HTML and CSS to JavaScript and backend technologies, this course is designed to take you from beginner to job-ready.</p><p>Throughout the course, you will work on real-world projects, build a portfolio, and gain the skills necessary to succeed in the tech industry.</p><ul><li>Learn front-end and back-end development</li><li>Build responsive and dynamic web applications</li><li>Understand databases and server-side programming</li></ul>",
         "coursePrice": 99.99,
         "isPublished": true,

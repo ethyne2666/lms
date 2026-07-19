@@ -33,4 +33,9 @@
   /* Default Text */
   --text-default: 15px;
   --text-default--line-height: 21px;
+
+
+  /* for the cards sizes in small screens*/
+  --grid-template-columns-auto: repeat(auto-fit, minmax(140px, 1fr));
 }
+
