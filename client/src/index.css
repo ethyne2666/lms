@@ -6,3 +6,31 @@
 *{
   font-family: Outfit;
 }
+
+
+@theme {
+  /* Home Page */
+  --text-home-heading-small: 26px;
+  --text-home-heading-small--line-height: 40px;
+
+  --text-home-heading-large: 46px;
+  --text-home-heading-large--line-height: 54px;
+
+  /* Course Page */
+  --text-course-heading-small: 20px;
+  --text-course-heading-small--line-height: 24px;
+
+  --text-course-heading-large: 38px;
+  --text-course-heading-large--line-height: 46px;
+
+  /* Course Details Page */
+  --text-course-details-heading-small: 20px;
+  --text-course-details-heading-small--line-height: 26px;
+
+  --text-course-details-heading-large: 30px;
+  --text-course-details-heading-large--line-height: 34px;
+
+  /* Default Text */
+  --text-default: 15px;
+  --text-default--line-height: 21px;
+}
