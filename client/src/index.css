@@ -37,5 +37,9 @@
 
   /* for the cards sizes in small screens*/
   --grid-template-columns-auto: repeat(auto-fit, minmax(140px, 1fr));
+
+  /*for the gradient color in the course details page*/
+  --spacing-section-height: 500px;
 }
+
 

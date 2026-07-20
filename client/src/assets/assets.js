@@ -286,7 +286,7 @@ export const dummyCourses = [
     },
     {
         "_id": "675ac1512100b91a6d9b8b24",
-        "courseTitle": "Open Claw explained",
+        "courseTitle": "Open Claw explained in detail",
         "courseDescription": "<h2>Deep Dive into open claw</h2><p>This course is designed for those who have a basic understanding of Python and want to take their skills to the next level. You will explore advanced topics such as decorators, generators, and context managers.</p><p>By the end of this course, you will be able to write efficient and clean Python code, and understand how to leverage Python's powerful features for real-world applications.</p><ul><li>Master advanced data structures</li><li>Implement object-oriented programming concepts</li><li>Work with libraries and frameworks</li></ul>",
         "coursePrice": 79.99,
         "isPublished": true,
