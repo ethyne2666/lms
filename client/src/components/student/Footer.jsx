@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
         </div>
-        <p className='py-4 text-center text-xs md:text-sm text-white/60'>CopyRight 2027 ©️ NullLogic. All Rights Reserved.</p>
+        <p className='py-4 text-center text-xs md:text-sm text-white/60'>CopyRight 2027 &copy; NullLogic. All Rights Reserved.</p>
     </footer>
   )
 }
