@@ -1,0 +1,4 @@
+;!function(){try { var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof global?global:"undefined"!=typeof window?window:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&((e._debugIds|| (e._debugIds={}))[n]="a503d41c-3106-a0f1-144f-1932641a4d3d")}catch(e){}}();
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,672833,e=>{"use strict";var l=e.i(793664),s=e.i(69326),o=e.i(988456);e.s(["default",0,function(){let e,t=(0,s.c)(1);return t[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsxs)(l.Fragment,{children:[(0,l.jsx)(o.Skeleton,{className:"size-full rounded-xl"}),(0,l.jsx)(o.Skeleton,{className:"size-full rounded-xl"}),(0,l.jsx)(o.Skeleton,{className:"size-full rounded-xl"}),(0,l.jsx)(o.Skeleton,{className:"size-full rounded-xl"})]}),t[0]=e):e=t[0],e}])}]);
+
+//# debugId=a503d41c-3106-a0f1-144f-1932641a4d3d

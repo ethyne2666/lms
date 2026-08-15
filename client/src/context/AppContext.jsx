@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { dummyCourses } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import humanizeDuration from 'humanize-duration'
+import { useAuth, useUser } from '@clerk/react';
 
 export const AppContext = createContext();
 
@@ -9,6 +10,9 @@ export const AppContextProvider = (props)=> {
 
     const currency = import.meta.env.VITE_CURRENCY
     const navigate = useNavigate()
+
+    const {getToken} = useAuth()
+    const {user} = useUser()
 
     const [allCourses, setAllCourses] = useState([])
     const [isEducator, setIsEducator] = useState(true)
@@ -19,10 +23,48 @@ export const AppContextProvider = (props)=> {
         setAllCourses(dummyCourses)
     }
 
+    const logToken = async() => {
+        console.log(await getToken());
+
+    }
+
     useEffect(() => {
         fetchAllCourses()
         fetchUserEnrolledCourses()
     },[])
+
+    useEffect(() => {
+        if(user){
+            logToken();
+        }
+    },[user])
+
+    // function to update user to educator
+    const updateRoleToEducator = async () => {
+    try {
+        const token = await getToken();
+
+        const response = await fetch(
+            "http://localhost:5000/api/educator/update-role",
+            {
+                method: "POST",
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    "Content-Type": "application/json"
+                }
+            }
+        );
+
+        const data = await response.json();
+
+        console.log(data);
+
+        return data;
+
+    } catch (error) {
+        console.error("Update role error:", error);
+    }
+};
 
     // Function to calculate average rating of course
     const calculatingRating = (course) => {
@@ -70,7 +112,7 @@ export const AppContextProvider = (props)=> {
     }
 
     const value = {
-       currency, allCourses, navigate, calculatingRating ,isEducator , setIsEducator, calculateNoOfLectures,calculateCourseDuration, calculateChapterTime, enrolledCourses, fetchUserEnrolledCourses
+       currency, allCourses, navigate, calculatingRating ,isEducator , setIsEducator, calculateNoOfLectures,calculateCourseDuration, calculateChapterTime, enrolledCourses, fetchUserEnrolledCourses , updateRoleToEducator
     }
 
     return (
